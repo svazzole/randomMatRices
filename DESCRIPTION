@@ -6,7 +6,8 @@ Authors@R: c(person("Simone", "Vazzoler", role = c("aut", "cre"),
                     email = "svazzole@gmail.com"))
 Maintainer: Simone Vazzoler <svazzole@gmail.com>
 Imports:
-  Matrix
+  Matrix,
+    Rcpp
 Suggests:
   knitr
 Depends:
@@ -15,6 +16,7 @@ Description: A set of functions to create random matrices.
 License: GPL-2
 URL: 
 BugReports: 
-VignetteBuilder: 
+VignetteBuilder:
   knitr
 RoxygenNote: 5.0.1
+LinkingTo: Rcpp

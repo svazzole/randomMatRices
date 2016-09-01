@@ -1,5 +1,7 @@
 rGOE <- function(n) {
   
-  return(rWigner(n))
+  M <- rWigner(n)
+  M <- (M + t(M))/sqrt(2)
+  return(M)
   
 }

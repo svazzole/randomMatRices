@@ -17,3 +17,15 @@ BEGIN_RCPP
     return __result;
 END_RCPP
 }
+// hermitianMatrix
+NumericMatrix hermitianMatrix(int n, NumericVector v);
+RcppExport SEXP randomMatRices_hermitianMatrix(SEXP nSEXP, SEXP vSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< int >::type n(nSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type v(vSEXP);
+    __result = Rcpp::wrap(hermitianMatrix(n, v));
+    return __result;
+END_RCPP
+}

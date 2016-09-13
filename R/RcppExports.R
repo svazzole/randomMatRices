@@ -5,3 +5,7 @@ symmetricMatrix <- function(n, v) {
     .Call('randomMatRices_symmetricMatrix', PACKAGE = 'randomMatRices', n, v)
 }
 
+hermitianMatrix <- function(n, v) {
+    .Call('randomMatRices_hermitianMatrix', PACKAGE = 'randomMatRices', n, v)
+}
+

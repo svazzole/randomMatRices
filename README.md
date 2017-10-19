@@ -4,7 +4,7 @@
 
 ## Installation
 
-```{r}
+```r
 install.packages(devtools)
 devtools::install_github("svazzole/randomMatRices")
 ```
